@@ -4,8 +4,7 @@ Slam with Pan Servo
 
 ## 使い方
 
-`$ source devel/setup.bash`
-
+`$ source devel/setup.bash`  
 `# world launch`
 
 `$ roslaunch turtlebot_gazebo turtlebot_world.launch`
