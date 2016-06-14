@@ -56,18 +56,144 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: false
+      Enabled: true
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        camera_rgb_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_rgb_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        caster_back_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        caster_front_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        plate_bottom_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        plate_middle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        plate_top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_4_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_bottom_5_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_kinect_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_kinect_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_middle_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_middle_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_middle_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_middle_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_top_0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_top_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_top_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        pole_top_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        wheel_left_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wheel_right_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: false
+      Value: true
       Visual Enabled: true
     - Class: rviz/TF
       Enabled: false
@@ -98,9 +224,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: true
       Max Color: 255; 255; 255
-      Max Intensity: -999999
+      Max Intensity: 0
       Min Color: 0; 0; 0
-      Min Intensity: 999999
+      Min Intensity: 0
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -218,7 +344,7 @@ Visualization Manager:
       Value: false
     - Angle Tolerance: 0.01
       Class: rviz/Odometry
-      Color: 255; 25; 0
+      Color: 255; 255; 0
       Enabled: true
       Keep: 1
       Length: 0.5
@@ -275,7 +401,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -7.77
+      Angle: -7.8
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
@@ -284,11 +410,11 @@ Visualization Manager:
         Value: false
       Name: Current View
       Near Clip Distance: 0.01
-      Scale: 151.373
+      Scale: 126.586
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz)
-      X: 0.0475459
-      Y: -0.227685
+      X: 0.2561
+      Y: -0.129968
     Saved: ~
 Window Geometry:
   Displays:
@@ -306,5 +432,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 927
-  X: 509
-  Y: 20
+  X: 499
+  Y: 14

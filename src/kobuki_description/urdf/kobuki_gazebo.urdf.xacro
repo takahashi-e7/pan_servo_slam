@@ -44,8 +44,7 @@
 	
 	
 	  <gazebo>
-	    <plugin name="kobuki_controller" filename="/home/takahashi/turtlebot_ws/devel/lib/libgazebo_ros_kobuki.so">
-<!--	    <plugin name="kobuki_controller" filename="libgazebo_ros_kobuki.so">-->
+	    <plugin name="kobuki_controller" filename="libgazebo_ros_kobuki.so">
 	      <publish_tf>1</publish_tf>
 	      <left_wheel_joint_name>wheel_left_joint</left_wheel_joint_name>
 	      <right_wheel_joint_name>wheel_right_joint</right_wheel_joint_name>

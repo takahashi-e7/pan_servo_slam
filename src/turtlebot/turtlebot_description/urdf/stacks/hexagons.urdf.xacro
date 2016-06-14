@@ -17,18 +17,18 @@
       <child link="pole_bottom_${number}_link"/>
     </joint>
     <link name="pole_bottom_${number}_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_bottom.dae"/>
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.0492" radius="0.006"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_bottom.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>-->
+<!--      <collision>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.0492" radius="0.006"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.008"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -46,18 +46,18 @@
       <child link="pole_middle_${number}_link"/>
     </joint>
     <link name="pole_middle_${number}_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 ${M_PI} 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_middle.dae"/>
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.0608" radius="0.006"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 0" rpy="0 ${M_PI} 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_middle.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>-->
+<!--      <collision>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.0608" radius="0.006"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.012"/>
         <origin xyz="0 0 0"/>
@@ -75,18 +75,18 @@
       <child link="pole_top_${number}_link"/>
     </joint>
     <link name="pole_top_${number}_link">
-      <visual>
-        <origin xyz=" 0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_top.dae"/>
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.2032" radius="0.006"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz=" 0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/pole_top.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>-->
+<!--      <collision>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.2032" radius="0.006"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.060"/>
         <origin xyz="0 0 0"/>
@@ -104,18 +104,18 @@
       <child link="pole_kinect_${number}_link"/>
     </joint>
     <link name="pole_kinect_${number}_link">
-      <visual>
-        <origin xyz="0 0 -0.01" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/sensors/sensor_pole.dae" />
-        </geometry>
-      </visual>
-      <collision>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.0936" radius="0.006"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 -0.01" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/sensors/sensor_pole.dae" />-->
+<!--        </geometry>-->
+<!--      </visual>-->
+<!--      <collision>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.0936" radius="0.006"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.020"/>
         <origin xyz="0 0 0"/>
@@ -145,18 +145,18 @@
       <child link="plate_bottom_link"/>
     </joint>  
     <link name="plate_bottom_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_bottom.dae"/>
-        </geometry>
-      </visual>  
-      <collision>
-        <origin xyz="-0.02364 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.006" radius="0.170"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_bottom.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>  -->
+<!--      <collision>-->
+<!--        <origin xyz="-0.02364 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.006" radius="0.170"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.520" />
         <origin xyz="0 0 0" />
@@ -177,18 +177,18 @@
       <child link="plate_middle_link"/>
     </joint>  
     <link name="plate_middle_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_middle.dae"/>
-        </geometry>
-      </visual>  
-      <collision>
-        <origin xyz="0.01364 0.0 0.0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.006" radius="0.170"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_middle.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>  -->
+<!--      <collision>-->
+<!--        <origin xyz="0.01364 0.0 0.0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.006" radius="0.170"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.520" />
         <origin xyz="0 0 0" />
@@ -211,18 +211,18 @@
       <child link="plate_top_link"/>
     </joint>  
     <link name="plate_top_link">
-      <visual>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_top.dae"/>
-        </geometry>
-      </visual>  
-      <collision>
-        <origin xyz="0.01364 0 0" rpy="0 0 0"/>
-        <geometry>
-          <cylinder length="0.006" radius="0.170"/>
-        </geometry>
-      </collision>
+<!--      <visual>-->
+<!--        <origin xyz="0 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://turtlebot_description/meshes/stacks/hexagons/plate_top.dae"/>-->
+<!--        </geometry>-->
+<!--      </visual>  -->
+<!--      <collision>-->
+<!--        <origin xyz="0.01364 0 0" rpy="0 0 0"/>-->
+<!--        <geometry>-->
+<!--          <cylinder length="0.006" radius="0.170"/>-->
+<!--        </geometry>-->
+<!--      </collision>-->
       <inertial>
         <mass value="0.520"/>
         <origin xyz="0 0 0"/>

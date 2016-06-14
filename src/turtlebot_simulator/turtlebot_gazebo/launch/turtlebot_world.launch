@@ -1,10 +1,7 @@
 <launch>
 <!--  <arg name="world_file"  default="$(env TURTLEBOT_GAZEBO_WORLD_FILE)"/>-->
-<!--  <arg name="world_file"  default="/home/takahashi/turtlebot_ws/nist2.world"/>-->
-<!--  <arg name="world_file"  default="/home/takahashi/turtlebot_ws/table.world"/>-->
-<!--  <arg name="world_file"  default="/home/takahashi/turtlebot_ws/plane.world"/>-->
-<!--  <arg name="world_file"  default="/home/takahashi/turtlebot_ws/ku.world"/>-->
-  <arg name="world_file"  default="/home/takahashi/turtlebot_ws/test3.world"/>
+<!--  <arg name="world_file" default="$(find turtlebot_gazebo)/worlds/plane.world"/>-->
+  <arg name="world_file"  default="$(find turtlebot_gazebo)/worlds/test3.world"/>
 
 
   <arg name="base"      value="$(optenv TURTLEBOT_BASE kobuki)"/> <!-- create, roomba -->
@@ -14,26 +11,29 @@
   <arg name="3d_sensor" value="$(optenv TURTLEBOT_3D_SENSOR kinect)"/>  <!-- kinect, asus_xtion_pro --> 
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-<!--  <include file="/home/takahashi/turtlebot_ws/src/gazebo_ros_pkgs/gazebo_ros/launch/empty_world.launch">-->
     <arg name="use_sim_time" value="true"/>
     <arg name="debug" value="false"/>
     <arg name="gui" value="$(arg gui)" />
     <arg name="world_name" value="$(arg world_file)"/>
   </include>
 
-  <include file="/home/takahashi/turtlebot_ws/src/turtlebot_simulator/turtlebot_gazebo/launch/includes/kobuki.launch.xml">
-<!--  <include file="/home/takahashi/turtlebot_ws/src/turtlebot_simulator/turtlebot_gazebo/launch/includes/kobuki.pos00.launch.xml">-->
+  <include file="$(find turtlebot_gazebo)/launch/includes/kobuki.launch.xml">
     <arg name="base" value="$(arg base)"/>
     <arg name="stacks" value="$(arg stacks)"/>
     <arg name="3d_sensor" value="$(arg 3d_sensor)"/>
   </include>
-  
 
+
+<!--add my nodes -->
   <node pkg="turtlebot_teleop" type="turtlebot_coron_cont" name="coron_commander" output="screen">
 <!--    <param name="publish_frequency" type="double" value="30.0" />-->
   </node>
 
   <node pkg="turtlebot_teleop" type="coron_astar" name="coron_astar" output="screen"/>
+
+  <node pkg="turtlebot_teleop" type="turtlebot_coron_vel" name="coron_controller" args="" output="screen" />
+<!--add my nodes -->
+
 
 
 

@@ -3,7 +3,7 @@
   <arg name="stacks"/>
   <arg name="3d_sensor"/>
   
-  <arg name="urdf_file" default="$(find xacro)/xacro.py '/home/takahashi/turtlebot_ws/src/turtlebot/turtlebot_description/robots/kobuki_hexagons_kinect.urdf.xacro'" />
+  <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'" />
   <param name="robot_description" command="$(arg urdf_file)" />
   
   <!-- Gazebo model spawner -->
@@ -17,12 +17,6 @@
     
 <!--    <remap from="cmd_vel_mux/output" to="mobile_base/commands/velocity"/>-->
   </node>
-
-
-<!--  <node pkg="/home/takahashi/turtlebot_ws/src/turtlebot/turtlebot_teleop" type="turtlebot_coron_vel" name="coron_controller" args="" output="screen" />-->
-  <node pkg="turtlebot_teleop" type="turtlebot_coron_vel" name="coron_controller" args="" output="screen" />
-
-
 
 
   <!-- Bumper/cliff to pointcloud (not working, as it needs sensors/core messages) -->
