@@ -25,7 +25,7 @@ Slam with Pan Servo
 `$ git clone https://github.com/takahashi-e6/0614test`  
 `$ catkin_init_workspace`  
 `$ cd ..`  
-`$ rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -r`  
+`$ rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -r -y`  
 `$ catkin_make`  
 
 ## ライセンス
