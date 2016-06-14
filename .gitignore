@@ -1,0 +1,7 @@
+bin/
+build/
+lib/
+devel/
+*.swp
+*.swo
+*.pyc
