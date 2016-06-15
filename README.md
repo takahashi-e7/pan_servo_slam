@@ -18,7 +18,7 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 
 ## 使い方
 
-# 起動
+#### 起動
 `# ターミナル起動時に設定を反映`  
 `$ echo "source ~/pan_servo_slam/devel/setup.bash" >> ~/.bashrc`  
 `$ source ~/.bashrc`  
