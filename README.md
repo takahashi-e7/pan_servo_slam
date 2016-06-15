@@ -19,7 +19,7 @@ Slam with Pan Servo
 ## インストール
 
 `$ source /opt/ros/indigo/setup.bash`  
-`$ git clone https://github.com/takahashi-e6/0614test`  
+`$ git clone https://github.com/takahashi-e6/pan_servo_slam`  
 `$ cd pan_servo_slam/src`  
 `$ catkin_init_workspace`  
 `$ cd ..`  
