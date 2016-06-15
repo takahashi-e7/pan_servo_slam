@@ -18,7 +18,7 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 
 ## 使い方
 
-#### 起動
+### 起動
 `# ターミナル起動時に設定を反映`  
 `$ echo "source ~/pan_servo_slam/devel/setup.bash" >> ~/.bashrc`  
 `$ source ~/.bashrc`  
@@ -33,7 +33,7 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 `# Rviz立ち上げ`  
 `$ roslaunch turtlebot_rviz_launchers view_navigation.launch`
 
-# 動作確認
+### 動作確認
 Rviz上で「2D nav goal」を押下して、向かわせたい場所を押下をするとその場所へ台車が移動する。その際の経路が赤い線で表示される。
 
 ## ライセンス
