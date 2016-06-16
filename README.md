@@ -8,8 +8,7 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 取得してSLAMを行った。
 
 ### なぜ距離センサ？
-LRFはまだまだ高い！
-
+LRFはまだまだ高いと思いませんか？
 
 ### なぜ自作のnavigation?
 move_baseのnavigationから送られてくるのが、速度指令だから。
@@ -19,6 +18,7 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 
 ## インストール
 
+`# ターミナルを立ち上げてインストール`  
 `$ source /opt/ros/indigo/setup.bash`  
 `$ cd ~/`   
 `$ git clone https://github.com/takahashi-e6/pan_servo_slam`  
