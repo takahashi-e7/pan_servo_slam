@@ -12,11 +12,13 @@
 	  </gazebo>
 	
 	  <gazebo reference="wheel_right_link">
-      <!--forward 1m to right 5cm-->
-	    <mu1>0.03</mu1>
-	    <mu2>0.03</mu2>
-<!--	    <mu1>1.0</mu1>-->
-<!--	    <mu2>1.0</mu2>-->
+<!--forward 1m to right 5cm-->
+<!--	    <mu1>0.03</mu1>-->
+<!--	    <mu2>0.03</mu2>-->
+
+<!--original-->
+	    <mu1>1.0</mu1>
+	    <mu2>1.0</mu2>
 	    <kp>1000000.0</kp>
 	    <kd>100.0</kd>
 	    <minDepth>0.001</minDepth>
