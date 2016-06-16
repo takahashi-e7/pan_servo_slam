@@ -7,6 +7,10 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 実際、距離センサ（GP2Y0A02YK）を使い、前方60[deg]、10点のデータを1[Hz]で
 取得してSLAMを行った。
 
+### なぜ距離センサ？
+LRFはまだまだ高い！
+
+
 ### なぜ自作のnavigation?
 move_baseのnavigationから送られてくるのが、速度指令だから。
 今回使用した台車はジャイロセンサもエンコーダもなく、速度指令への追従が難しかった。
@@ -32,7 +36,7 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 
 #### 起動
 
-`# ターミナルを複数立ち上げて各launchを起動`
+`# ターミナルを複数立ち上げて各launchを起動`  
 `# gazebo起動`  
 `$ roslaunch turtlebot_gazebo turtlebot_world.launch`
 
@@ -75,7 +79,7 @@ Rvizの左ペインで「Map」→「Topic」を「/map」へ切り替え、キ�
 
 ## ライセンス
 
-MIT
+MIT License
 
 ## Author
 
