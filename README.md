@@ -21,16 +21,14 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 `$ cd pan_servo_slam/src`  
 `$ catkin_init_workspace`  
 `$ cd ..`  
-`$ rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -r`  
+`$ rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO`  
 `$ catkin_make`  
 
 `# ターミナル起動時に設定を反映`  
 `$ echo "source ~/pan_servo_slam/devel/setup.bash" >> ~/.bashrc`  
 `$ source ~/.bashrc`  
 
-## 使い方
-
-### ナビゲーション
+### ナビゲーションサンプル
 
 #### 起動
 
@@ -49,7 +47,8 @@ Rviz上で「2D nav goal」を押下して、向かわせたい場所を押下�
 
 ![navigation](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/navigation.jpg "navigation")
 
-### ナビゲーション
+### マッピングサンプル
+
 #### 起動
 
 `# ターミナルを複数立ち上げて各launchを起動`  
@@ -66,11 +65,12 @@ Rviz上で「2D nav goal」を押下して、向かわせたい場所を押下�
 `$ roslaunch turtlebot_rviz_launchers view_navigation.launch`  
 
 #### 使い方
-Rvizの左ペインで「Map」→「Topic」を「/map」へ切り替えて、キーボード操作のターミナルをアクティブにして、ロボットを動かす。
+Rvizの左ペインで「Map」→「Topic」を「/map」へ切り替え、キーボード操作のターミナルをアクティブにして、ロボットを動かす。
 
-![gmapping](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/gmapping.png "gmapping")
+![gmapping](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/gmapping.gif "gmapping")
 
 ## 参考
+
 [Pi Robot Meets ROS](http://www.pirobot.org/blog/0014/)
 
 ## ライセンス
