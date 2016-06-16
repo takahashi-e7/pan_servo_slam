@@ -80,7 +80,7 @@ Rvizの左ペインで「Map」→「Topic」を「/map」へ切り替え、キ�
 
 ## ライセンス
 
-MIT License
+MIT ライセンス
 
 ## Author
 
