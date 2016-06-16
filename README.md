@@ -11,6 +11,8 @@ ROSのSLAMパッケージと１つの距離センサを用いたSLAMシステム
 move_baseのnavigationから送られてくるのが、速度指令だから。
 今回使用した台車はジャイロセンサもエンコーダもなく、速度指令への追従が難しかった。
 
+![over view](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/overview.png "image")
+
 ## インストール
 
 `$ source /opt/ros/indigo/setup.bash`  
