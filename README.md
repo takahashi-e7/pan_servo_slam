@@ -24,12 +24,15 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 `$ rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -r`  
 `$ catkin_make`  
 
-## 使い方
-
-### 起動
 `# ターミナル起動時に設定を反映`  
 `$ echo "source ~/pan_servo_slam/devel/setup.bash" >> ~/.bashrc`  
 `$ source ~/.bashrc`  
+
+## 使い方
+
+### ナビゲーション
+
+#### 起動
 
 `# ターミナルを複数立ち上げて各launchを起動`
 `# gazebo起動`  
@@ -41,16 +44,38 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 `# Rviz立ち上げ`  
 `$ roslaunch turtlebot_rviz_launchers view_navigation.launch`
 
-### 動作確認
+#### 使い方
 Rviz上で「2D nav goal」を押下して、向かわせたい場所を押下をするとその場所へ台車が移動する。その際の経路が赤い線で表示される。
 
+![navigation](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/navigation.jpg "navigation")
+
+### ナビゲーション
+#### 起動
+
+`# ターミナルを複数立ち上げて各launchを起動`  
+`# gazebo起動`  
+`$ roslaunch turtlebot_gazebo turtlebot_world.launch`  
+
+`# gmappingノード`  
+`$ roslaunch turtlebot_gazebo gmapping_demo.launch`  
+
+`# キーボード操作`  
+`$ roslaunch turtlebot_teleop keyboard_teleop.launch`  
+
+`# Rviz立ち上げ`  
+`$ roslaunch turtlebot_rviz_launchers view_navigation.launch`  
+
+#### 使い方
+Rvizの左ペインで「Map」→「Topic」を「/map」へ切り替えて、キーボード操作のターミナルをアクティブにして、ロボットを動かす。
+
+![gmapping](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/gmapping.png "gmapping")
 
 ## 参考
 [Pi Robot Meets ROS](http://www.pirobot.org/blog/0014/)
 
 ## ライセンス
 
-??????
+MIT
 
 ## Author
 
