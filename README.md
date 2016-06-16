@@ -17,6 +17,7 @@ move_baseのnavigationから送られてくるのが、速度指令だから。
 ![over view](https://github.com/takahashi-e6/pan_servo_slam/blob/master/pict/overview.png "image")
 
 ## インストール
+環境はUbuntu14.04 + ROS indigo + gazebo2
 
 `# ターミナルを立ち上げてインストール`  
 `$ source /opt/ros/indigo/setup.bash`  
